@@ -1,0 +1,10 @@
+Jaka jest cena paliwa na trasie wynoszącej 150 km, jeśli cena
+benzyny wynosi 6 zł, a samochód pali 7 litrów na 100 km.
+
+Dane
+dystans = 150
+cena_paliwa = 6 zł za litr
+spalanie = 7 litrów / 100 km
+
+Wyniki:
+Cena przejazdu na dystansie 150 km.

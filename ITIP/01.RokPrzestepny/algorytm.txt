@@ -1,0 +1,3 @@
+Rok jest przestępny jeżeli:
+- dzieli się przez 4, ale nie dzieli się przez 100 lub 
+- dzieli się przez 400

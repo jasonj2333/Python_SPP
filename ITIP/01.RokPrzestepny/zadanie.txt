@@ -1,0 +1,7 @@
+Na podstawie roku podanego przez użytkownika, zwróć informacje czy jest rok przestępny
+
+Dane wejściowe:
+rok
+
+Wynik - dane wyjściowe
+Informacja czy rok jest przestępny
