@@ -1,0 +1,12 @@
+styczeñ
+luty
+marzec
+kwiecieñ
+maj
+czerwiec
+lipiec
+sierpieñ
+wrzesieñ
+paŸdziernik
+listopad
+grudzieñ

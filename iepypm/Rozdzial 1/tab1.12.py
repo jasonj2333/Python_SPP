@@ -1,0 +1,11 @@
+tekst = 'ABCDEFGH'
+print(tekst)
+print(tekst[2:])
+print(tekst[1::2])
+print(tekst[::-1])
+print(tekst[::-2])
+print(tekst[::2])
+print(tekst[:3:-2])
+print(tekst[:4:2])
+print(tekst[0:4:2])
+print(tekst[2:8:2])
