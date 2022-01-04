@@ -1,14 +1,14 @@
 x = float(input("Podaj liczbę x: "))
-y = input("Podaj liczbę y: ")
+y = float(input("Podaj liczbę y: "))
 
 
 def pierwsza_funkcja(x, y):
     z = 5
     x = x + 2
-    if x < y
+    if x < y:
         x = x * z
         y = y - 1
-    return x, y
+        return x, y
     else:
         if x == y:
             y = y - z
@@ -37,7 +37,7 @@ def druga_funkcja():
         return a, b, c
 
 
-x, y, z = pierwsza_funkcja(x, y)
+x, y = pierwsza_funkcja(x, y)
 
 print(f"x to: {x} a y to: {y}")
 
