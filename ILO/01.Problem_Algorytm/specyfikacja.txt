@@ -1,0 +1,6 @@
+
+Zadanie: Oblicz drogę przebytą w czasie t przez pojazd poruszający się ze średnią prędkością v.
+
+Dane:
+
+Wyniki:

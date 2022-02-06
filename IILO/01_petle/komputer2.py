@@ -7,4 +7,4 @@ for miesiac in miesiace:
     wplata = int(input("Wpłaty " + str(miesiac) + ": "))
     suma_wplat = suma_wplat + wplata
 
-print("Suma wpłat wynosi: ", suma_wplat, " zł")
+print(f"Suma wpłat wynosi: {suma_wplat} zł")

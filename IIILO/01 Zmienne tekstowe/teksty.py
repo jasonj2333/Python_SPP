@@ -1,6 +1,13 @@
 #zmienna o nazwie tekst do której przypisyjemy znakiem = ciąg znaków w " " lub ' '
 tekst = "Ola ma kota Tolka, a kot Tolek ma Panią Olę"
 szukany = "kot"
+dlugi_tekst = ''' 
+Litwo! Ojczyzno moja! ty jesteś jak zdrowie.
+Ile cię trzeba cenić, ten tylko się dowie,
+Kto cię stracił. Dziś piękność twą w całej ozdobie
+Widzę i opisuję, bo tęsknię po tobie.
+'''
+
 
 print(tekst) #wyświetl tekst przechowywany w zmiennej tekst
 print(tekst[0]) #wyświetla literę o indeksie 0 (pierwsza litera) z ciągu przechowywanego w zmiennej tekst

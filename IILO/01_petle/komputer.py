@@ -4,4 +4,4 @@ for i in range(12):
     kwota = int(input("Podaj kwotę: "))
     suma = suma + kwota
 
-print("Zebrałeś:", suma, "zł")
+print("Zebrałeś: {suma} zł")

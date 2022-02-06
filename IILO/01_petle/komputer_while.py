@@ -6,4 +6,4 @@ while suma_wplat < kwota:
     wplata = int(input("Podaj wysokość wpłaty: "))
     suma_wplat = suma_wplat + wplata
 
-print("Gratulacje, zebrałeś odpowiednią kwotę, masz: ", suma_wplat)
+print(f"Gratulacje, zebrałeś odpowiednią kwotę, masz: {suma_wplat}")
