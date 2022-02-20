@@ -1,7 +1,7 @@
 ##### Algorytm porównywania tekstów i jego wykorzystanie do sprawdzenia sprawdzianu z angielskiego :)
 
 ## wersja podręcznikowa
-def takie_same_while(t1, t2):
+def takie_same_m(t1, t2):
     i = 0
     dl1 = len(t1)
     dl2 = len(t2)
@@ -21,16 +21,19 @@ def takie_same(tekst1, tekst2):
   
   return True
 
-uczen = ["architekt", "scientist", "Biologist", "computer science", "nurse"] #lista odpowiedzi ucznia
-wzor = ["architect", "scientist", "biologist", "computer scientist", "nurse"] #lista poprawnych odpowiedzi
-punkty = 0
+print(f"Porównywanie tekstów wersja 1: {takie_same_m('informatyka', 'informatyka')}")
+print(f"Porównywanie tekstów wersja 2: {takie_same('informatyka', 'informatyka')}")
 
-## sprawdzanie sprawdzianu
-for i in range(len(uczen)):
-  if(takie_same(uczen[i], wzor[i])):
-    punkty += 1
-    print(f"{uczen[i]} - dobrze ")
-  else:
-    print(f"{uczen[i]} - źle - poprawna forma {wzor[i]}")
-
-print(f"Punkty: {punkty}")
+# uczen = ["architekt", "scientist", "Biologist", "computer science", "nurse"] #lista odpowiedzi ucznia
+# wzor = ["architect", "scientist", "biologist", "computer scientist", "nurse"] #lista poprawnych odpowiedzi
+# punkty = 0
+# 
+# ## sprawdzanie sprawdzianu
+# for i in range(len(uczen)):
+#   if(takie_same(uczen[i], wzor[i])):
+#     punkty += 1
+#     print(f"{uczen[i]} - dobrze ")
+#   else:
+#     print(f"{uczen[i]} - źle - poprawna forma {wzor[i]}")
+# 
+# print(f"Punkty: {punkty}")
