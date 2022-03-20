@@ -13,6 +13,7 @@ def szyfr_odwrotny_v1(tekst):
 
     return szyfrogram
 
+#wersja 2
 def szyfr_odwrotny_v2(tekst):
     szyfrogram = ""
 
@@ -21,7 +22,8 @@ def szyfr_odwrotny_v2(tekst):
 
     return szyfrogram
 
-print(szyfr_odwrotny_v1(tekst_jawny))
-print(szyfr_odwrotny_v2(tekst_jawny))
-print(tekst_jawny[::-1])
+## Przykładowe użycie
+print(szyfr_odwrotny_v1(tekst_jawny)) #wersja 1
+print(szyfr_odwrotny_v2(tekst_jawny)) #wersja 2
+print(tekst_jawny[::-1]) #wbudowany mechanizm Pythona
 
