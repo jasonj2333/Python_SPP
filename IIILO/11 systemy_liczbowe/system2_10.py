@@ -17,11 +17,11 @@ def sys_to_dec(liczba, podstawa):
         if liczba[i].isdigit():
             dziesietna += int(liczba[i])*potega
         else:
-            dziesietna += (ord(liczba[i])-55)*potega
+            dziesietna += (ord(liczba[i].upper())-55)*potega
         potega *= podstawa
     return dziesietna
 
 print(bin_to_dec(binarna))
 print(int(binarna, 2))
 
-print(sys_to_dec('7B', 16))
+print(sys_to_dec('7b', 16))
