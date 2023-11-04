@@ -1,0 +1,13 @@
+
+A collection of fractals in Python using matplotlib
+Autor: Quentin Deschamps
+https://github.com/Quentin18/Matplotlib-fractals
+
+========================
+
+Draw the Mandelbrot Set in Python
+Autor: Bartosz Zaczyński
+https://realpython.com/mandelbrot-set-python/
+
+========================
+
