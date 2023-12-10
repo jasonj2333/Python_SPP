@@ -2,7 +2,7 @@
 #Zaimplementuj własny szyfr symetryczny:
 #Algorytm szyfrowania - znak_szyfrogramu = nr_znaku * klucz - klucz
 #Do kodowania znaków liczbami wykorzystaj tablicę znaków ASCII/UNICODE
-#Poszczególne liczby reprezentujące znaki w szyfrogramie rozdzielaj znakiem #
+#Poszczególne liczby reprezentujące znaki w szyfrogramie rozdzielaj znakiem -
 #Może ci się przydać:
 # - ord(znak)
 # - chr(liczba)
