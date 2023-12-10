@@ -14,12 +14,12 @@ def szyfruj(tekst, klucz):
     szyfrogram = ""
     for znak in tekst:
         liczba = ord(znak) * klucz - klucz
-        szyfrogram += str(liczba) + "#"
-    return szyfrogram
+        szyfrogram += str(liczba) + "-"
+    return szyfrogram[0:-1]
 
 def deszyfruj(szyfrogram, klucz):
     jawny = ""
-    szyfrogram = szyfrogram.split("#")
+    szyfrogram = szyfrogram.split("-")
     for znak in szyfrogram:
         if znak != "":
             liczba = int((int(znak) + klucz) / klucz)
