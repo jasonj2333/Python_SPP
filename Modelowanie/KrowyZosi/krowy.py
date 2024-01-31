@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 #krowy
 def C(t):
@@ -13,6 +14,7 @@ def H(t):
     return C(t) * F(t)
 
 lata = [0,2,4,6,8,10,12]
+x = np.linspace(0, 12, 100)
 siano = []
 #print(H(t))
 #print(240 * 3**t)
@@ -20,5 +22,6 @@ for rok in lata:
     print(f"Siano konieczne do karmienia {C(rok)} krów wynosi {H(rok):,.2f}")
     siano.append(H(rok))
 
-plt.plot(lata, siano)
+plt.plot(x, H(x))
 plt.show()
+
