@@ -1,4 +1,4 @@
-import xlwt
+#import xlwt
 import matplotlib.pyplot as plt
 
 # kwota_kredytu = float(input("Podaj kwotę kredytu: "))
