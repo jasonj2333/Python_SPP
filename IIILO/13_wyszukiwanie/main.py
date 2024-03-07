@@ -29,13 +29,13 @@ with open('names.txt') as f:
 
 n = len(names)
 
-def znajdz(wartosc: int) -> int:
+def search_l(wartosc: int) -> int:
     for index in range(n):
         if names[index] == wartosc:
             return index
     return -1
 
-def znajdz_w(wartosc: int) -> int:
+def search_l_guard(wartosc: int) -> int:
     names.append(wartosc)
     i = 0
     while names[i] != wartosc:
@@ -44,7 +44,7 @@ def znajdz_w(wartosc: int) -> int:
     
     return -1
 
-def znajdz_b(wartosc: int) -> int:
+def search_b(wartosc: int) -> int:
     poczatek = 0
     koniec = n - 1
     
@@ -73,4 +73,4 @@ def bubbleSort(arr):
         
 bubbleSort(names)
 print(names)
-print(znajdz_b("Wilson Eric"))
+print(search_b("Wilson Eric"))
