@@ -59,18 +59,19 @@ def search_b(wartosc: int) -> int:
                 poczatek = srodek + 1
     return -1
 
-def bubbleSort(arr):
-    n = len(arr)
-    swapped = False
-    for i in range(n-1):
-        for j in range(0, n-i-1):
-            if arr[j] > arr[j + 1]:
+def bubble_sort(liczby, n):
+    for i in range(n):
+        swapped = False
+        for j in range(1, n - i):
+            if liczby[j-1] > liczby[j]:
+                #liczby[j-1], liczby[j] = liczby[j], liczby[j-1]
+                temp = liczby[j]
+                liczby[j] = liczby[j-1]
+                liczby[j-1] = temp
                 swapped = True
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-         
-        if not swapped:
-            return
+        if not swapped: return liczby
+    return liczby #nie musimy zwracać listy bo i tak sortujemy oryginalną listę
         
-bubbleSort(names)
+bubble_sort(names, n)
 print(names)
 print(search_b("Wilson Eric"))
