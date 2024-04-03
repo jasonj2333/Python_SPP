@@ -1,0 +1,9 @@
+Zadanie na 3
+Za pomocą pętli for wypisz wszystkie liczby od 5, 25
+
+Zadanie na 5
+Za pomocą pętli for wypisz wszystkie liczby parzyste oraz liczby podzielna przez 7
+z przedziału podanego przez użytkownika.
+
+np. start = 5, stop = 24
+Wynik: 6, 7, 8, 10, 12, 14, 16, 18, 20, 21, 22, 24 

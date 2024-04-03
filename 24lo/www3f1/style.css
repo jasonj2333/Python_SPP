@@ -1,3 +1,65 @@
+header{
+    border: 4px #000080 solid;
+    border-radius: 15px;
+    display: flex;
+}
+
+header h1, header p, header a {
+    color: #000080;
+}
+
+header img {
+    margin: 10px;
+}
+
+header p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+header p {
+    margin-top: 0;
+}
+
+#grafika img {
+    width: 100%;
+}
+
+#grafika div {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+#cytat{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#artykuly{
+    display: flex;
+}
+
+#artykuly article{
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
 footer {
     background-color: lightgray;
+    display: flex;
+}
+
+footer div{
+    width: 50%;
+    padding: 10px;
+}
+
+#wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
 }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="tarcza.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.8116735"
+     inkscape:cx="642.49988"
+     inkscape:cy="759.79475"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="166"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g25893"
+       inkscape:export-filename="C:\Users\jerzy.jasonek\Documents\jjasonek\24lo\www3f2\tarcza.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         id="g1533"
+         transform="matrix(0.77314412,0,0,1,20.967209,0)"
+         style="stroke:#000080;stroke-width:1.70592931;stroke-miterlimit:4;stroke-dasharray:none">
+        <path
+           style="fill:none;stroke:#000080;stroke-width:1.70592931;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 124.07702,172.76808 c -7.33463,10.21164 -19.12027,9.11342 -31.651779,6.1961 8.270879,13.91115 -1.412194,33.8662 31.600139,39.44854"
+           id="path892"
+           sodipodi:nodetypes="ccc" />
+        <path
+           style="fill:none;stroke:#000080;stroke-width:1.70592931;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 124.07702,172.76808 c 7.33463,10.21164 19.12027,9.11342 31.65178,6.1961 -8.27088,13.91115 1.4122,33.8662 -31.60014,39.44854"
+           id="path1525"
+           sodipodi:nodetypes="ccc" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#000080;stroke-width:0.264583"
+         x="116.80671"
+         y="193.52501"
+         id="text6788"><tspan
+           sodipodi:role="line"
+           id="tspan6786"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#000080;stroke-width:0.264583"
+           x="116.80671"
+           y="193.52501">XXIV</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#000080;stroke-width:0.264583"
+           x="116.80671"
+           y="209.40001"
+           id="tspan6790">LO</tspan></text>
+    </g>
+  </g>
+</svg>

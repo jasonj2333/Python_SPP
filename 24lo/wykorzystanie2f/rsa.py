@@ -23,6 +23,12 @@ def encryption(t, pbk):
     
     return t**e % n
 
+def decryption(c, prk):
+    d = prk[0]
+    n = prk[1]
+    
+    return c ** d % n
+
 p = 11
 q = 13
 n = p * q
@@ -32,3 +38,27 @@ d = private_key(phi, e)
 
 pub_key = (e, n)
 print(pub_key)
+priv_key = (d, n)
+print(priv_key)
+
+#szyfrowanie
+cipher = encryption( ord('J'), pub_key)
+print(chr(cipher))
+
+#deszyfrowanie
+plain_text = decryption(cipher, priv_key)
+print(chr(plain_text))
+
+message = "pierwszydzienwiosny"
+cipher = []
+
+for c in message:
+    cipher.append( encryption( ord(c), pub_key) )
+print(cipher)
+
+plain_text = ""
+for c in cipher:
+    plain_text += chr( decryption(c, priv_key) )
+print(plain_text)
+
+
