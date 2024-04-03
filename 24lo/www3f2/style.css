@@ -1,8 +1,45 @@
+#wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 header{
    border: 4px #000080 solid;
    border-radius: 15px; 
+   display: flex;
+}
+
+header h1, header a {
+    color:#000080;
+}
+
+header img {
+    margin: 10px;
+}
+
+header h1 span{
+    font-size: 23px;
+}
+
+#grafika img{
+    width: 100%;
+}
+
+#cytat{
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+}
+
+#przyciski{
+    text-align: center;
+}
+
+#artykuly{
+    display: flex;
 }
 
 footer{
     background-color: lightgrey;
+    display: flex;
 }
