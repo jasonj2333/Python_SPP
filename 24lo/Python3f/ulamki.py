@@ -2,7 +2,7 @@ class Ulamek:
     def __init__(self, licznik, mianownik):
         self.licznik = licznik
         self.mianownik = mianownik
-        
+    
     def wyswietl(self):
         print(f"{self.licznik}/{self.mianownik}")
         
@@ -17,11 +17,19 @@ class Ulamek:
         self.licznik = self.licznik // nwd
         self.mianownik = self.mianownik // nwd
         
-u1 = Ulamek(10, 30)
-u2 = Ulamek(1, 2)
-u1.wyswietl()
+    def dodaj(self, u2):
+        wynik = Ulamek(self.licznik * u2.mianownik + u2.licznik * self.mianownik, self.mianownik * u2.mianownik)
+        return wynik
+
+u1 = Ulamek(10, 20)
 u1.skroc()
 u1.wyswietl()
+
+u2 = Ulamek(6,86)
+u2.skroc()
 u2.wyswietl()
 
+u3 = u1.dodaj(u2)
+u3.skroc()
+u3.wyswietl()
 
