@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1>Sam rysuję fraktale</h1>
+<canvas style="border:1px solid black" id="fraktal" width="400" height="400"></canvas>
+<div id="zoom"></div>
+<script>
+const zoomDiv = document.querySelector("#zoom");
+var zoom = 100;
+var pixels = 400;
+var widok_x = -2, widok_y=-2;
+
+function mandelbrot(a,b) {
+  c = 0;
+  d = 0;
+  for (n=0 ; n<300 ; n++) {
+    rzeczywista = c*c - d*d +a;
+    urojona = 2*c*d + b;
+    c = rzeczywista;
+    d = urojona;
+    if (!isFinite(c) || !isFinite(d)) {
+      return 2+n;    
+    }
+  }
+  
+  return Math.sqrt(c*c + d*d);
+}
+
+var c = document.getElementById("fraktal");
+var ctx = c.getContext("2d");
+
+function generateColor(number,min,max,bright) {
+  if(number<min) number = min;
+  if(number>max) number=max;
+  number = number-min;
+  max = max-min;
+  step_len = max/5;
+  step_no = Math.floor(number/step_len);
+  step_progress = Math.floor(((number - step_len*step_no)/step_len) * bright);
+  srep_regress = bright-step_progress;
+  
+  switch(step_no){
+    case 0:
+      return "rgb("+bright+","+step_progress+","+0+")";
+    case 1:
+      return "rgb("+srep_regress+","+bright+","+0+")";
+    case 2:
+      return "rgb("+0+","+bright+","+step_progress+")";
+    case 3:
+      return "rgb("+step_progress+","+srep_regress+","+bright+")";
+    case 4:
+      return "rgb("+bright+","+0+","+srep_regress+")";
+  }
+}
+
+function rysuj() {
+  ctx.fillStyle = "white";
+  ctx.fillRect(0, 0, pixels, pixels);
+  for (let x = 0; x<pixels ; x+=1) {
+    for (let y = 0; y<pixels ; y+=1) {
+      a = (x/zoom)+widok_x;
+      b = (y/zoom)+widok_y;
+      wynik = mandelbrot(a,b);
+      if(!isFinite(wynik) || wynik > 2) {
+        ctx.fillStyle = generateColor(wynik,2,502,255);
+        ctx.fillRect( x, y, 1, 1 );
+      } else if(wynik <= 2) {        
+        ctx.fillStyle = generateColor(wynik,0,2,100);
+        ctx.fillRect( x, y, 1, 1 );
+      }
+      
+    }
+  }
+}
+
+rysuj();
+zoomDiv.innerHTML = "Zoom: "+zoom+"%";
+
+document.getElementById("fraktal").addEventListener("click",e => {
+  klik_x = e.clientX - e.target.offsetLeft;
+  klik_y = e.clientY - e.target.offsetTop;
+  x = (klik_x + widok_x * zoom)/zoom;
+  y = (klik_y + widok_y * zoom)/zoom;
+  zoom = zoom * 1.5;
+  widok_x = x - (pixels/zoom)/2;
+  widok_y = y - (pixels/zoom)/2;
+  rysuj();
+  zoomDiv.innerHTML = "Zoom: "+zoom+"%";
+});
+  
+</script> 
+</body>
+</html>

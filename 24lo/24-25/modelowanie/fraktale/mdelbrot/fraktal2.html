@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+Sam rysuję fraktale
+<canvas style="border:1px solid black" id="fraktal" width="400" height="400"></canvas>
+
+<script>
+
+var zoom = 100;
+var pixels = 400;
+var widok_x = -2, widok_y=-2;
+
+function mandelbrot(a,b) {
+	c = 0;
+	d = 0;
+	for (n=0 ; n<30 ; n++) {
+		rzeczywista = c*c - d*d +a;
+		urojona = 2*c*d + b;
+		c = rzeczywista;
+		d = urojona;
+	}
+	return Math.sqrt(c*c + d*d);
+}
+
+var c = document.getElementById("fraktal");
+var ctx = c.getContext("2d");
+
+function rysuj() {
+	ctx.fillStyle = "white";
+	ctx.fillRect(0, 0, pixels, pixels);
+	ctx.fillStyle = "black";
+	for (let x = 0; x<pixels ; x+=1) {
+		for (let y = 0; y<pixels ; y+=1) {
+			a = (x/zoom)+widok_x;
+			b = (y/zoom)+widok_y;
+			wynik = mandelbrot(a,b);
+			if(wynik < 2) {
+				ctx.fillRect( x, y, 1, 1 );
+			}
+			
+		}
+	}
+}
+
+rysuj();
+
+document.getElementById("fraktal").addEventListener("click",e => {
+	klik_x = e.clientX - e.target.offsetLeft;
+	klik_y = e.clientY - e.target.offsetTop;
+	x = (klik_x + widok_x * zoom)/zoom;
+	y = (klik_y + widok_y * zoom)/zoom;
+	zoom = zoom * 1.5;
+	widok_x = x - (pixels/zoom)/2;
+	widok_y = y - (pixels/zoom)/2;
+	rysuj();
+});
+	
+</script> 
+</body>
+</html>

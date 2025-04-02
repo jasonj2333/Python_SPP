@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+Sam rysuję fraktale
+<canvas style="border:1px solid black" id="fraktal" width="400" height="400"></canvas>
+
+<script>
+
+function mandelbrot(a,b) {
+	c = 0;
+	d = 0;
+	for (n=0;n<30;n++) {
+		rzeczywista = c*c - d*d + a;
+		urojona = 2*c*d + b;
+		c = rzeczywista;
+		d = urojona;
+	}
+	return Math.sqrt(c*c + d*d);
+}
+
+var c = document.getElementById("fraktal");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "black";
+
+for (x = 0; x<400 ; x+=1) {
+	for (y = 0; y<400 ; y+=1) {
+		a = x/100 - 2;
+		b = y/100 - 2;
+		wynik = mandelbrot(a,b);	
+		if(wynik<2) {
+			ctx.fillRect( x, y, 1, 1 );
+		}
+			
+	}
+}
+
+</script> 
+</body>
+</html>
