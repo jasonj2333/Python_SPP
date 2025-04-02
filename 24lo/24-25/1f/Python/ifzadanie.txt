@@ -1,0 +1,9 @@
+Utwórz program który w zależności od wartości zmiennej kolor wypisze następujący komunikat:
+
+Jeżeli kolor == "czerwony" to wypisze #FF0000
+Jeżeli kolor == "zielony" to wypisze #00FF00
+Jeżeli kolor == "niebieski" to wypisze #0000FF
+w przypadku innego koloru wypisze nie znam takiego koloru
+
+
+kolor = "niebieski"
